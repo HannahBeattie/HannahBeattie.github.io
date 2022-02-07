@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=VT323&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Andada+Pro&family=VT323&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+
+
+
+:root {
+    background-image: url(/Users/gremlinnonsense/Desktop/DevAcadamyBlog/HannahBeattie.github.io/styles/spacetest.jpeg);*/;
+    --main-radius: 5px;
+    --main-padding: 5px;
+    background-color: black;
+ 
+  
+  }
+
+
+
+  h2 {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+  }
+
+
+  .box {
+    background-color: rgb(236, 149, 197);
+    border: 5px solid rgb(233, 179, 3);
+    color:  rgb(0, 0, 0);
+    margin: auto;
+    width: 90%;
+    border: 3px solid rgb(6, 6, 6);
+    padding: 10px;
+    text-align: center;
+}
+
+#title 
+{ 
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    color: green;
+ 
+
+}
+
+#flex-container {
+  margin: auto;
+
+}
+
+p1 {
+    font-size: 30px;
+
+}
+
+
+#blogpost {
+    font-size: 30px;
+    text-transform: none;
+]
+
+}
+
+p3 { 
+    font-size: 20px;
+    color: rgb(226, 55, 183);
+
+    opacity: 70%;
+
+}
+
+h3 {
+    font-family:'Times New Roman', Times, serif
+    color: pink;
+
+}
+
+.dropbtn {
+    background-color: #a50b6a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #df1616;}
+
+
+
+a:link {
+    color: rgb(226, 55, 183);
+    text-decoration: none;
+  }
+  
+
+  a:visited {
+    color: green;
+  }
+
+  a:hover {
+    color: rgb(241, 24, 133);
+  }
+  
