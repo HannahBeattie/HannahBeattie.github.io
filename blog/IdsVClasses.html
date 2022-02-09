@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <link href="/styles/primaryStyleSheet.css" rel="stylesheet" type="text/css">
+   
+
+    <title>IDs v Class</title>
+    <meta charset=“UTF-8”>
+
+</head>
+<body>
+
+ 
+     <h1>classes, ids and the joys of selectors</h1>
+   
+         <h2><i>This post unpacks how and why and when we might use ids and classes</i></h2>
+
+             <p>
+        First, a little context; <i>What is HTML? What is CSS? Who is my real father?</i>
+        <br>
+        Well, perhaps I can answer <i>two</i> of those questions...
+        <br>HTML,</b> or <i>'Hyper Text Markup Language'</i> is a language used to write the <i>content</i> of a webpage.<br>
+        If we were making a movie, we could call HTML 'the script' ; It could contain scene headings, dialogue and notes about
+        the film's characters.
+        <br>
+        Like most scripts, HTML follows a specific structure, which means a computer knows how to 'read' and interpret it.
+        <br>
+        Reading our movie's script would give us a good idea of the plot, genre and setting, but what about the style?
+        Giving our script to Wes Anderson or Quentin Tarantino might render very diffirent visual outcomes.
+        <br>
+        That's where CSS comes into play.
+        <b>CSS</b> or <i>Cascading Style Sheets”</i>“ is the language used to describe <i>how</i> HTML elements are displayed on screen.
+        Their language is not unlike that of the set designers, cinematographers, make-up artists and prop departments who would
+        create stunning visuals for our movie...although we would probably leave the bulk of the visual affects to our faithful 
+        collegues in Javiscript!
+        <br>
+        As the name suggest, our CSS document would be a 'style sheet' with a list of visual and formatting instructions to be applied to
+        our HTML file. 
+        <br>
+        We can link as many HTML files as we would like to the same CSS file, to express the same style rules to multiple documents. 
+        <br>
+        Ok, time for a tasty little demonstration.
+        </p>
+    
+    <center><img class="responsive" src="/styles/htmVSCss.png" alt="HTML and CSS illustration"></center>
+
+    <p class="caption">Here are our two files; HTML and CSS.
+    <br>Now, what happens when we link CSS's <i>styling instructions</i> to HTML's <i>content?</i>
+    </p>
+
+    <center><img class="responsive"src="/styles/after.png" alt="HTML plus CSS illustration"></center>
+   <p>
+    WOW! Neat. 
+
+    But what if we <i>only</i> wanted to make the first two (p1) sentences of our HTML doc rainbow?
+    It's all class baby!
+    <br>
+    In CSS we use <i>selectors</I> to specify which elements of an HTML doc we want to add style attributes to.
+    Two of the most commonly used selectors are 'class' and 'id'. 
+    <br>
+    The 'class' selector is used to select a few diffirent elements in an HTML doc, grouping them under
+    one label so that CSS knows to apply style changes to just those elements. 
+    <br>
+    Think of 'class' as a huge, brightly-coloured highlighter pen; If we highlighted all of the words in the first
+    (p1) paragraph of our diagram, it would be super easy (barely an inconvenience!) to tell CSS to 
+    <i> only</i>. apply our styles the highlighted sections.
+    </p>
+    <center><img  class="responsive" src="/styles/class.png" alt="illustration of class tagging">
+    </center>
+    <p class="caption">
+    The code for assigning the 'class' of 'rainbow' to an HTML text element would look a little something like this:
+    </p>
+    <center><img class="responsiveDiagram"src="/styles/idClassImage1.png" alt="illustration of class tagging in HTML">
+    </center>
+    <p class="caption">
+     Unfortunately 'rainbow' isn't a pre-existing CSS colour, so rather than faffing about with gradients
+     we are going to pretend that instead of wanting rainbow-coloured text, we desperately want <i>blue</i> text: 
+    </p>
+    <br>
+      <br>
+    <center><img  class="responsiveDiagram" src="/styles/idClassImage2.png" alt="illustration of class tagging in CSS">
+    </center>
+    <p> 
+    Cool beans.
+    <br>
+    <i>But what about ids?</i>
+    <br>
+    Well, an 'id selector' is like a class selector's exclusive, fancy, celebrity cousin.
+    While they too specify which content in an HTML document we want to apply style elements to,
+    they will only specify a <i>single element</i>
+    <br>
+    For instance, in the image below we are assigning the id of 'red' to the last paragraph (p2) of the HTML doc. 
+    </p>
+    <center><img  class="responsive" src="/styles/id.png" alt="illustration of class tagging"></center> 
+    <p>
+    We are then telling CSS: <i>Please make everything with the id of <span id="red"> red </span> red-coloured.</i>
+    CSS obliges, and, <i>voila!</i>; The last paragraph is red. 
+    <br>
+    Let's recap!<br>
+    A 'class' selector should be applied when there are multiple areas (or elements) you would like change,
+    while a 'id' selector should be used when you would like to apply particular styles to just one element. 
+    </p>
+    <p class="caption">In HTML we would assign the id 'myHeader' to a header like this:</p>
+    </center>
+    <center><img class="responsiveDiagram" src="/styles/idClassImage3.png" alt="illustration of class tagging in CSS">
+    </center>
+    <p class="caption">If we wanted to make some changes to just the header, our CSS file might contain a section that looked like this:
+    </p>
+    <center><img class="responsiveDiagram" src="/styles/idClassImage4.png" alt="illustration of class tagging in CSS">
+    </center>
+    <br>
+    <h3>
+    An easy way to differentiate class from id is to consider the difference between a teacher giving the same assignment to a whole classroom of children and the leader of MI6 checking the id of a secret agent before handing them a single classified folder of instructions. 
+    </h3>
+    <p>
+    <br>
+    <br>
+    Does your brain hurt yet?<br>
+    If so, hurrah! It means you are learning!
+    </p>
+    <br> 
+    <br>
+    <a href="https://hannahbeattie.github.io/" class="home" >🛸</a>
+
+</body>
+</html>
