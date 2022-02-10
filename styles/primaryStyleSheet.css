@@ -104,3 +104,18 @@ h3 {
     border: none;
     float: right;
 }
+
+.buttonbottom {
+    margin-left: 10%;
+    margin-top: 20%;
+    padding-top: 10%;
+    padding-bottom: 7%;
+    font-family: 'VT323';
+    text-decoration: none; 
+    color:rgb(231, 30, 214);
+    font-size: 30px;
+    font-size:2vw;
+    text-align: center;
+    
+
+}
