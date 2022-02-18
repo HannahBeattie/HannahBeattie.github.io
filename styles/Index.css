@@ -7,7 +7,7 @@
 
 
 body {
-    background-image: url(/styles/spacetest.jpeg);
+    background-image:url('/images/spaceBkgr.jpeg');
     color: white;
     font-family:'VT323', monospace;
     text-align: center;
