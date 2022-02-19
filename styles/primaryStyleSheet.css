@@ -137,3 +137,8 @@ h3 {
     margin-bottom: 20px;
     font-size: 15px;
 }
+
+a {
+    color: plum;
+    text-decoration: none;
+}
