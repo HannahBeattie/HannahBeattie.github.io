@@ -18,9 +18,9 @@ body {
 .button {  
     font-size: 30px;
     position: relative;
+    margin-right: 5px;
     text-align: center;
     border-bottom: 5px solid #ffc600;
-    margin: 5px;
     display: inline-block;
     font-size: 30px;
     text-decoration: none;
@@ -33,6 +33,24 @@ body {
     text-shadow: 1px 1px #036666;
 }
 
+.buttonB {  
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    border-bottom: 5px solid #1abebf;
+    margin: 5px;
+    display: inline-block;
+    font-size: 30px;
+    text-decoration: none;
+    line-height: 1;
+    padding: 10px;
+    background: rgb(199, 171, 235);
+    background-image: radial-gradient = s(122deg,rgb(126, 249, 43),#1abebe);
+    background-size: 300px,300px,100%;
+    color: rgb(143, 6, 6);
+    text-shadow: 1px 1px #ff0000;
+    margin-bottom: 10px;
+}
 
 .box {
     border: 1px;
@@ -42,6 +60,8 @@ body {
     line-height: 190%;
     margin-right: 60px;
     margin-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 
