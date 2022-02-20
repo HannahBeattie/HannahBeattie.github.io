@@ -28,113 +28,157 @@
 <h2><i>This post explores some basic conscepts of JS</i></h2>
 
     <p>
-        If you read my previous blog on <a href="/blog/technicalBlog/IdsVclass">id's and classes</a> you may recall an analogy in which I described HTML as a film script and CSS as a concept-artist/cinematographer and set dresser, in charge of executing aesthetic decisions of our ‘film’ or ,——in non-metaphor-land——-web document.<br>
+        If you read my previous blog on <a href="/blog/technicalBlog/IdsVclass">id's and classes</a> you may recall an analogy in which I described HTML as a film script and CSS as the concept-artist/cinematographer/set-dresser in charge of translating aesthetic decisions to the screen.<br>
         But what of javascript?<br>
-        It may be the special-affects team, we mused; Well, in this blog post we are going to dive a little more into why and how that might be, as-well as discussing the DOM, javascript functions,  control flows, loops, arrays and objects. 
-        Phew! It is a lot, so grab a drink of water, or something stronger, and let us dive in.<br>
-        
-        
-        Let’s start with the DOM, or Document Object Mode.<br>
-        
-        The DOM is an interface——which simply means a point of connection between two systems, subjects or languages. The DOM is cross-platform and language-independent; For our purposes, we could see it as bilingual and able to ‘read’ any code we throw at it, regardless of the language.<br>
-        How the DOM ‘reads’ an HTML or XML document is more uniform however; It is looking for a particular shape of pattern, typically described as a tree structure; Not unlike a family tree, the hierarchy of an HTML document can be expressed in branch-like forms, with every tag (or branch) being an object, and every nested tag being the ‘children’ of that enclosing branch.<br> 
-        The ‘html’ tag would be the roots, the ‘head’ and ‘title’ could be branches.<br>
-        
-        As programers, we can use these tags to access and manipulate inclosed information;
-        <br>For instance we could...<br>
+        We previously considered it to be the special-affects team, however in this post I would like to dive a little more into why and how that is. 
+<br> 
+<br> 
 
 
+<h2>Daddy DOM</h2>
         
-        <center><img style="margin-top: 40px; margin-bottom: 40px; max-width: 60%; opacity: 80%;" src= "/images/javascript.png" alt=“dev tools example of text change"></center>
-
         <p>
-
-        The DOM inspector is equiped with developer tools that make it easy to select and read tags and open/collapse the information inside them.<br>
-    
-        A program’s control flow is the order in which code is executed; It is a vital part of programming.<br>
+        Let's start by talking about the DOM, also known as a web page's 'Document Object Mode'.<br>
         
-        Imagine you take a nice refreshing shower, but then change into smelly clothes? <br>
-        Or, you change into fresh clothes, but have just spent hours at the gym sweating…<br>
-        The order a code is executed plays a vital role in how affective and useful that code is.<br>
+        The DOM is an interface——which simply means a point of connection between two systems, subjects or languages. 
         
-        A code will run from first line to last line, unless a computer runs into structures that we put in to alter that running order.<br>
-        This means we can manipulate the order to fit multiple scenarios or respond to a huge range of inputs.<br>
+        It is cross-platform and language-independent. <br>
+        This is extremely lucky because often coders write in several ‘languages’ to create a document or application; A bi-lingual interpreter, like the DOM, can ‘read’ these codes and follow their instructions, so long as they follow a couple of simple rules or structures. 
+        <br>
+        Although the programming languages are different, the way a DOM ‘reads’ an HTML or XML document is similar; It looks for a familiar pattern, what is often described as a ‘tree’.
+        The ‘tree structure’ of a HTML or XML document is not unlike a family tree, with a hierarchy of branch-like forms, known as ‘tags’, stretching out and nesting their own ‘children’ tags. 
+        In an HTML document the ‘html’ tag at the top of the page would represent the base of the tree; Its roots. The ‘head’ tag beneath it ‘html’ would be the first (bottom) branches and the element ‘title’ would branch off that and the text of that title’s name would branch off that…
+        Meanwhile, beneath the ‘head’ tag, the ‘body’ tag would represent the branches above, and the content enclosed in those branches might have content-branches of their own and so-on and so-on…
+        You may have noticed that for this metaphor to work our tree must be upside-down, or we would have to flip our coding content upside-down and that simply would not work!
+        For that reason, a second metaphor I would like to suggest—-<I> if the whole tree thing doesn’t do it for you </I>—-is the image of nesting-dolls. 
+        The big mumma nesting doll is the HTLM; It contains all of the content. Within it’s belly however are two separate nesting dolls, rather than just the one; One is the ‘head’, the other is the ‘body’. They each contain their own nesting dolls…
+        Which is a round-about way of saying that each ‘tag’ is a container essentially, or a name-we-can-call-an-object. 
+        <br>
+        As programers we use these tags to access and manipulate inclosed information;
+        In CSS if we apply changes to the ‘body’, it would be like giving an instruction to the ‘mumma’ nesting doll; And subsequently changing all of the information (or objects) inside of her, or at least giving the same instructions to them.
+        If we took out just one nesting doll and gave it instructions, the ‘mumma’ doll would not be affected at all. 
         
-        Some of the ways we do this is with conditions and loops.<br>
-        
-        ‘Conditions’ appear when we present a program with a particular condition and tell it how to respond if that happens.<br>
-        We can then tell it to respond differently if something else happens instead or/and as-well.<br>
-        
-        For instance:
+        Ok, back to the tree metaphor; Say one of our branches had a ‘# text’ id, and another had a ‘h1’ class, well, we could use those ‘class selectors’ to make changes to those elements. 
+        Where? 
+        In the dom! 
+        <br> 
+        ‘Invest in your future’ might become … 
+        <br>
     </p>
-    <pre>
-    <p class="demo">
-        if (field==empty)  {
-               promptUser();
-                    } else {
-               submitForm();
-        }
+                
+                <center><img style="margin-top: 40px; margin-bottom: 40px; max-width: 60%; opacity: 80%;" src= "/images/investInFarts.png" alt=“dev tools example of text change"></center>
+        
+                <p>
+        
+         The DOM inspector has a bunch of developer tools inside it that allows you to ‘select’ tags and expand and collapse the information inside them. You can look at the whole tree or just the branches, or just one branch and it’s sub-branches.<br>
+            
+        Marvellous! 
+        Ok, let’s move on to ‘control flow’. 
     </p>
-    </pre> 
+        <br>
+              <h2>Control Flow</h2>
+      <p>     
+        A program’s control flow is the order in which code is executed; It is a vital part of programming!<br>
+                
+        Imagine you take a nice refreshing shower, before changing into smelly clothes? <br>
+        You brush your teeth, then eat a block of chocolate. 
+        You put on your new, ironed tuxedo and then spend the next few hours sweating at the gym. 
+        <br>
+        You decide to wash your dishes, then eat the food you have placed on them…
+        <br> 
+        In code, as in life, the order and context in which steps are preformed matters immensely. 
+        <br>
+        Luckily computers are smart, ordered, yet adaptable; Code will run from first line to last…unless we put a structure in to disrupt that.
+        <br>
+        How we disrupt that order is called ‘control flow’ and it often occurs through conditions and loops.
+        <br> 
+        ‘Conditions’ appear when we present a program with a particular scenario, and tell it what to do if that scenario occurs. 
+        <br>
+        We can also tell it what to do if  a different scenario occurs instead or/and as-well as the first one.<br>
+    </p>          
+                For instance:
+            </p>
+            <pre>
+            <p class="demo">
+                if (field==empty)  {
+                       promptUser();
+                            } else {
+                       submitForm();
+                }
+            </p>
+            </pre> 
+        
 
-<p>
+        
+              <h2>loops</h2>
+
+              <p>
         Loops are used when we ask a program to repeat a particular process over and over again until a certain condition (that we choose) is met.<br>
         
+        Imagine a rugby coach asking his players to run around a field twenty times. He could say “run around this field. Count every loop of the field you make. Stop when you have counted to twenty." 
+         <br>
+        Asking a computer to count incrementally up to 20 using a loop would look more like this;<br>
+        </p>
+            <pre>
+            <p class="demo">
+                for(var i = 0; i < 21; i++){
+                    console.log(i)
+                }
+            </p>
+        </pre>
+           <p class="caption2"><i>This loop will print numbers 0-20, will stop when condition is met (i = 20)</i></p> 
+         
+            <p>
+        Computers ---<i>and programers</i>---start counting at zero…unlike the majority of rugby coaches. 
+        <br>
+        However, this loop is adding one number to the count (i++), every time it loops around itself.  
+        <br>
+        Once we have a loop, we can add actions; We can ask a computer to do something every time a particular condition is reached. 
+        <br>
+        <br>
         
-        If we were rugby coaches we could tell our team to run around the field until they have completed a circuit twenty times.<br>
-        
-        Asking a computer to count incrementally up to 20 using a loop would look like this;<br>
-</p>
-    <pre>
-    <p class="demo">
-        for(var i = 0; i < 21; i++){
-            console.log(i)
-        }
-    </p>
-</pre>
-   <p class="caption2"><i>This loop will print numbers 0-20, will stop when condition is met (i = 20)</i></p> 
- 
-    <p>
-    The ‘loop’ the computer is preforming is the process of adding one number to the count (I++), over and over again. .<br>
-    We can then add actions, such as asking a computer to do something (ie. console.log the numbers) until a particular condition is reached.
- </p>
-<pre>
-<p class="demo">
-        var i = 0;
-        while(i < 10){
-            console.log(i)
-            i++
-        }
- </p>
- </pre>
-    <p class="caption2"><i>This loop  will print number 0-9, will stop when condition becomes false (i >=10)</i></p>
-    <br>
-    <br>
-        
-        <h2>Functions </h2>
-        
-    <p>
-        Functions are chunks of code designed to preform a task.<br>
-        When we write a function, it will not execute until something ‘calls’ it and the conditions we have coded into it are met.<br> 
-        This might occur through an event (a button turns blue when it is clicked), thorough referencing it in another section of code or linked document, or writing it to self-evoke.<br>
+                <h2>Functions </h2>
+    
+            <p>
+           
+        Functions are the names we give to the chunks of code that tell a computer how to do a particular action.<br>
+                When we write a function, it will not execute until something ‘calls’ it (and the conditions we have coded into it are met.)<br> 
+                This might occur through an event (a button turns blue when it is clicked), thorough referencing this code in another bit of the document (or linking to a document that references it), or writing the code to self-evoke.<br>
         Functions are often written to return a value or action. <br>
+         
+        When I was working retail, I was told by my manager to greet each customer with “Good morning, can I help you?”.
+        If I was creating a function to execute a similar greeting, it could be called by clicking a button or even loading the page.  
+        <br>
+        </p>
+        <br>
+        <br>
         
-        Similarly to how a store manager might ask their employees to say “Good morning, can I help you?” To every customer, a function could execute a similar code, which could be called by clicking on a link or button, or even from the loading of a page.<br>
-    </p>
-    <br>
-  
-        <h2>Arrays and objects</h2>
-
-    <p style="margin-bottom: 5%;">
-        In javascript, almost everything can be described as an object (booleans, numbers, strings, dates, trays, functions and ….objects). <br>
-        An object can exist as information, or it can exist to store a lot of information. <br>
-        For instance an array is a type of veritable (sometimes an object) that can contain more than one value. If you wanted to store a list of items, you could store it in an array. <br>
-        While a ‘string’ is used to describe a series of characters or words that exist like a sentence (or many sentences), an array contains characters, while remembering that they are separate, allowing you to select and alter, replace or reference just one, easily. <br>
-        You could imagine an array like fridge-magnet poetry; You can easily grab and swap out words without having to slice up the page of a book. <br> 
-        An object could be the fridge or the finished poem or a single word from our poem-array; We use that word to describe something in javascript when it is a standalone entity with properties and type, that can be accessed as a single unit. <br>
-        Phew! That was a lot. <br>
-        If you got to the end of this rather dry lesson, then thank you for your time, here is a tiny award : <br>
-    </p>
+        
+                <h2>Arrays and objects</h2>
+               
+        <p style="margin-bottom: 5%;">
+                In javascript, almost everything can be described as an object (<i>booleans, numbers, strings, dates, trays, functions and ….well, ‘objects’</i>). <br>
+        
+        An object can exist as information, or a container to store information; <br> 
+        For instance, an array is a type of veritable (sometimes an object) that can contain more than one value.
+        If you wanted to store a list of items, you could store it in an array. <br>
+        
+        I could make an array called ‘Handbag’ and it could store the items ‘lipstick’, ‘mints’, ‘bit of mashed up chewing gum’. The computer would know that every object inside my handbag-object is also an object. Therefore arrays are very useful at storing information we know we may want to move or use in a function.
+        Array-objects exist on an index, for instance my ‘handbag’ could contain five items; The computer would count them from 0-4 and I could find an item by using it’s corresponding number as a handle. 
+        A ‘string’ on the other hand is a series of characters or words that exist in a sentence (or many sentence). 
+        Everything in a string is a single object (unless sliced or otherwise manipulated); The quotation marks that contain a string are the parameters of that object. They define it. 
+        Unlike my ‘lipstick’ object nested inside my ‘handbag object’, removing one item from a string would take a bit of work. 
+        A string would be more like having a bit of paper on which I draw a handbag. I could draw items inside that handbag, but removing one or changing it would involve some slicing and splicing. 
+        <br>
+        So, to recap: The DOM is a marvellous land where we can find all of the ‘handles’ or ‘tags’ that we use to define objects (or elements) that we would like to manipulate and change. 
+        Functions are how we tell code to do-a-thing when something-I-said-will-happen, happens. 
+        Control-flow allows us to decide when a what order code does-that-thing in.
+        Arrays are objects (with handles) that store other objects (with handles). Strings are useful for holding data that can be expressed in text-form, it is more like a single object but can be sliced or manipulated in other ways; For instance using a numerical index. 
+        
+        Phew! I think that’s it. 
+        Don’t forget to invest in farts, and, if you got to the end of this rather dry lesson, then thank you for your time, here is a tiny award : <br>
+            </p>
+                
         
         
     <h1> <center>🏆</center><br>no.1 nerd</h1>
