@@ -75,7 +75,16 @@ h3 {
 	box-sizing: content-box;
 	min-width: 100%;
 	padding: 3%;
-	text-align: left;
+}
+
+h4 {
+	color: rgb(0, 0, 0);
+	font-size: 25px;
+	line-height: 150%;
+	background-color: azure;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 5%;
 }
 
 .responsive {
