@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <link href="/styles/primaryStyleSheet.css" rel="stylesheet" type="text/css">
+   
+
+    <title>j a v a s c r i p t</title>
+    <meta charset=“UTF-8”>
+
+</head>
+
+
+<body>
+    <center>
+        <a class="button" href="/index.html"> h o m e </a>
+        <a class="button" href="/blog/blogDir.html">b l o g</a> 
+        <a class="button" href="/blog/reflectionsBlog/ethics.html">e t h i c s</a>
+        <a class="button" href="/blog/reflectionsBlog/emotionalIntelligence.html">EQ v IQ</a> 
+        <a class="button" href="/blog/technicalBlog/IdsVclass.html">i d / c l a s s</a> 
+        <a class="button" href="/blog/technicalBlog/javascriptBasics.html">j a v a s c r i p t</a> 
+        <a class="button" href="/blog/technicalBlog/problemSolving.html">p r o b + s o l v e</a> 
+    </center>
+            
+
+<h1>🤖   p r o b l e m + s o l v i n g 🤖 </h1>
+   
+<p>
+I recently came across a coding problem that made my temples ache and my jaw clench, which is unfortunate because viewing a problem through a lens of temple-aching, jaw-clenching frustration is unlikely to produce clarity.<br>
+The problem went like this;<br> 
+I was asked to: <br> 
+
+</p>
+
+<h3 style="font-size: 20px;">
+
+<li>Write a bit of code that represented a grade-book; It would be an ‘object’</li>
+
+<li>Create a separate a bit of code that represented a student with a name and score.</li>
+
+    <li>Create two more student ‘objects’.</li>
+
+        <li> Write each students name in the gradebook, and link it to the data of the student-objects.</li>
+ 
+            <li>Create an ‘addscore’ function that would retrieve a student’s grades, when their name was given as data.</li>
+ 
+                <li>Create a function called ‘average’ that would calculate the average of any number that was given to it.</li>
+
+                    <li>Create a function that ‘called’ the ‘grade average’ function for that student, when a name was given as data.</li>
+
+                        <li>Write a line of code that would ‘return’ the final value automatically</li>
+
+
+</h3>>
+<p>
+I hated it. <br> 
+Immediately I was having flashbacks to my acne-chinned,  oily-haired adolescence; Gazing out the window during the barbaric torture, known as ‘math-class’.<br> 
+I began grumbling about my ADHD and dyslexia and maths(!) <br> 
+I had been learning javascript for less than two weeks and each new problem seemed to push my head just below water.<br>  
+</p>
+<center>*</center><br> 
+<p>
+First, I tried; Over and over again. <br> 
+Trying to hold all of the components in my head at once.<br> 
+I spent a long time staring at the question prompts; working and re-working the same bit of text again.<br> 
+Finally, I took a break. Made a snack. Went outside and returned with more deliberate intention.<br> 
+‘Pseudo-code’ is one of my favourite methods of problem-solving right now. <br> 
+The method involves writing the steps you will need to take to generate a solution to your given problem, in plain, familiar, uncomplicated language.<br>  
+Firstly, this breaks a problem into smaller, more-manageable problems; Secondly, it stops you from trying to hold several complicated problems (and their moving parts) all in your head at once. <br> 
+I began to progress.<br>  
+Then, inevitably hit another road-block; The code I wrote was retrieving all of the student’s data and grades…except one.<br>  
+I had made an ‘Elizabeth’ object, yet her grades were not being read, nor their average found. <br> 
+After a little bit of dumb, bemused scrolling, I realised the very obvious and silly mistake I had made; Not writing Elizabeth’s scores. <br> 
+I had left the ‘score:’ section of my Elizabeth-object blank. <br> 
+What I recognise now about this interaction (between myself and the question) is that sometimes something appears very simple, and makes you feel foolish…<br> 
+When you begin unpacking the number of questions in a question; Or the number of components you have to manage and make work, it may be a little easier to look upon yourself and your work with patience, compassion and even a little pride.<br>  
+I spent a lot of time that day, under the ‘hood of my car’, lost in wires, when what I needed was to take a step back and patiently check the most basic things, rather than presuming I was failing the ‘complicated bits’. <br> 
+When I used the ‘console.log’ function to ask the computer what information I had saved on each student’s name, it was obvious that Elizabeth’s data was missing. <br> 
+And it seemed like a foolish mistake.<br>  
+Because all mistakes seem foolish, once you see them.<br>  
+The trick is in letting yourself make them, over and again, and knowing when to step away and breathe.<br> 
+</p>
+<h1>Problem solving: Oh, the elegance! </h1>
+<p>
+I was having problems understanding ‘arrays’ in relation to the ‘.lenth’ function. <br> 
+Which to a non-coder may sound a little like “I was having trouble snoodling my bazoomber according to the blipperbottom algorithm’, so let me give you some context; <br> 
+In javascript an ‘array’ is an ordered list of values. <br> 
+Each of these values are known-as an ‘element’, and an array stores them on an index. <br> 
+To find out how many elements are in an array, you can use the <i>.length </i> property. <br> 
+<p>
+
+<pre> 
+<p style="font-family: unset;">
+    let myArrayOfBeans = [ 'baked', 'magic', 'chili', 'cat-paw' ]
+    console.log(colors.length); //4
+</p>
+</pre>
+
+<p class="caption">
+You can ‘push’ elements onto an array ; 
+</p>
+
+<pre> 
+    <p style="font-family: unset;">
+    myArrayOfBeans.push('been');
+    console.log(beans.length) //5
+    </p>
+</pre>
+
+<p class="caption">
+And look! the length of that array will change.<br>  
+</p>
+You can also grab whatever element or elements of an array you would like using methods like </i> find() </i> or <i> indexOf() </i>> and referencing the index number of that element.<br> 
+</p>
+<pre>
+    <p style="font-family: unset;">
+    let numbers = [1, 2, 3, 4, 5, 6, 7];
+    console.log(numbers.find(e => e % 2 == 0));
+    </p>
+</pre>
+    <p class="caption">
+    for instance this code finds the first even number in this array
+</p>
+<br>
+<p>
+Easy-peesy-lemon-squeezy you say! Perhaps.<br>  
+But this was all new stuff to me, and although I understood the concepts of arrays and indexes, a bunch of new information, patterns and words were entering my head at once, after weeks of cramming knowledge in there.<br> 
+Then came the idea of looping arrays by length and <i> the remainder operator (%) </i>.<br> 
+There were several problems I battled through that featured both, but the great-big problem that I solved ‘elegantly’ ——<i> to borrow a dev-question phrase </i>——-was teaching myself to understand how looping worked, when my brain had such trouble processing the information and sources I had been given to learn those concepts.<br>  
+I taught myself the best way I knew how;<br>
+<i>Playing.</i><br> 
+
+<center><img class="responsive3"src="/images/loop.jpg" alt="hand-drawn notes on looping in js"></center>
+
+<p>
+Perhaps a dryer form of play then I would typically share, but a game none-the-less.<br>  
+
+I am curious about animation, and so decided to use the concepts that I had to learn (the necessary components of the curriculum, that I would need to know for later) to do something I really, really wanted to do…<br> 
+Switch between a bunch of drawings of magical-cats-with-lazer-beam-eyes ‘on click’.<br> 
+And just to challenge myself, I thought I would try to work out two different ways to do it and incorporate my most feared opponents;
+<br>
+The <i>remainder operator(%) </i> and <i>.length.</i><br> 
+<br> 
+<h3 style="font-size: 20px;">
+I wanted to write a function that would :
+<br>
+<i>change the image of a cat when a user clicked on it</i>
+<br>
+<br>
+One way to do this would involve :</b> 
+<br> 
+<br> 
+<li>creating an array of cat images</li>
+<li>writing a function that would cycle thought any array I gave it, one-by-one.<br>
+    &nbsp &nbsp &nbsp In this case it would be looking through all my cat pics. </li> 
+    <li>telling that function to start at 0, or the first cat picture.</li>
+        <li>Telling that function to count incrementally by one ( this is done by adding a ‘++’)</li>
+            <li>telling the function to devide object's index no. by the total length of the index.
+                <li>writing a function that would ‘call’ or initiate my amazing cat-cycling function.</li>
+</h3>
+</p>
+<br>
+<p>
+Phew!<br> 
+The elegance came when I COULD NOT COMPREHEND how my cat-counting function returned to zero.<br> 
+Where did it get the number zero from?<br>  
+How did it know to return?<br>  
+Careful readers might have noticed that the ‘length’ function meant that the count could never exceed the amount-of-elements in the array, but I had trouble absorbing this information.<br>  
+I came up with two solutions.<br>   
+And boy where they elegant!They were so elegant, they might as well have been wearing top-hats and fake moustaches!<br>  
+First, I made a view finder.<br>   
+I cut a line of four small rectangles out of a bit of paper and labeled them ‘no.0’, ‘no.1’, ‘no.2’ and ‘no.3’.<br>  
+Then, I grabbed four dice that were laying on my table and arranged them in a circle.<br>   
+I pretended the dice where four different laser-cat pictures and then I held the view-finder above them and rotated it, noting that it only ever counted up to four.<br>   
+Eureka!<br>   
+I understood how the length of an array could limit the amount of pictures my function would be looking for.<br>  
+But just to really hammer the idea home I took a little look at ‘for loops’, another looking concept I had been struggling with.<br>  
+</P>
+
+<center><img class="responsive3"src="/images/forloop.jpg" alt="hand-drawn notes on for-loops in js"></center>
+
+<p>
+I noticed that you can tell ‘for loops’ to repeat a certain action until the condition that you have given it, stops being true.<br>  
+While the function loops, it can go over the same numbers again and again and repeat the same actions.<br>   
+I imagined this as being like the ouroboros; An ancient symbol of a serpent, looping around and consuming its own tail. It progresses both infinitely and not-at-all.<br>  
+</p>
+<center><img class="responsive3"src="/images/placeholder.webp" alt="place-holder for my illustration"></center>
+
+<p>
+You may be asking what is so elegant about thinking of a snake. The elegance is this; I learn in stories, images and day-dreams. I retain information through imagining characters and noticing patterns and personifying the elements that make-up a pattern and telling it back to myself as a fairytale.<br>  
+It makes maths less spooky and alien to me.<br>   
+So, the elegance here is not in the code, but the way in which is playfully and joyfully made sense in my head ; The moment of ‘click’ that might as well have been magic. It was in recognising that, though I might struggle with some forms of learning and some resources, I can find ways to enjoy taking in information..even if it seems terribly difficult! <br>  
+I have been asked to discuss the following problem-solving techniques and processes and how confident I feel using each: <br>  
+Pseudocode<br>  
+Trying something<br>  
+Rubber ducky method<br>  
+Reading error messages<br>  
+Console.logging<br>  
+Googling<br>  
+Asking your peers for help<br>  
+Asking coaches for help<br>  
+Improving your process with reflection<br>  
+
+And although the teachers pet in me would like to do exactly what it asked, I believe that as someone who is decidedly not Nuerotypical, I have to spend a lot of time and energy into adapting my learning styles and adapting content to fit me, and it is more important to me to recognise the things that I have noticed are working for me, and point out how they are working then try to analyse deeply other possible ways of working.<br>   
+I will say that I am relatively comfortable with all the listen methods…but more importantly I am comfortable knowing that I am someone who actively notices what works and what doesn’t work for my learning and alters my approach to fit. <br>  
+I have atypical thinking and learning styles that make writing or researching teaching-resources that are aimed at neurotypical thinking-patterns difficult or tedious at times…so I will continue to ‘do me’ and learn how I like to learn. Even if it isn’t a usual or designated method.<br>  <br>
+</p>
+<a class="buttonbottom" href="https://hannahbeattie.github.io/">🛸</a>
+
+</body>
+</html>
