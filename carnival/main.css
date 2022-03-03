@@ -1,0 +1,234 @@
+body {
+	font-family: 'Rye', cursive;
+	background-color: lightpink;
+}
+
+h1 {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-size: 3em;
+	text-align: center;
+}
+
+table {
+	margin-right: center;
+	margin-left: center;
+	margin: 0 auto;
+	background-image: url('whack-a-mole/mud.jpg');
+}
+
+td {
+	background-color: black;
+	opacity: 70%;
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+	border: 3px solid rgb(0, 0, 0);
+}
+
+.container {
+	text-align: center;
+}
+
+.inflate-an-image {
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	margin: 5px;
+}
+
+.dress-a-parent {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.dress-an-image {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.head {
+	z-index: 2;
+}
+
+.body {
+	z-index: 0;
+}
+
+.shoes {
+	z-index: 1;
+}
+
+.mole {
+	background: center/contain url('whack-a-mole/Replacemolev2.png');
+	border-radius: 50%;
+	background-color: black;
+	opacity: 100%;
+}
+
+#startMe {
+	display: inline-block;
+	padding: 02em 2em;
+	margin: 0.3em 0.3em 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Rye', cursive;
+	font-weight: 400;
+	text-align: center;
+	transition: all 0.15s;
+	color: rgb(148, 83, 123);
+	background: rgb(235, 169, 179);
+	border-color: rgb(235, 153, 165);
+	box-shadow: #fd0094;
+}
+#startMe:hover {
+	color: #fd0094;
+}
+#startMe:active {
+	color: #8f2f67;
+}
+@media all and (max-width: 30em) {
+	#startMe {
+		display: block;
+		margin: 0.4em auto;
+	}
+}
+/*
+.bouncy {
+	animation: bouncy 5s infinite linear;
+	position: relative;
+}
+@keyframes bouncy {
+	0% {
+		top: 0em;
+	}
+	40% {
+		top: 0em;
+	}
+	43% {
+		top: -0.9em;
+	}
+	46% {
+		top: 0em;
+	}
+	48% {
+		top: -0.4em;
+	}
+	50% {
+		top: 0em;
+	}
+	100% {
+		top: 0em;
+	}
+}*/
+
+#main {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: center;
+	flex-wrap: wrap;
+}
+
+#mainTitle {
+	color: #ad0768;
+	margin-bottom: 0.5em;
+}
+
+/*  this is the title h3 tag and contains the background
+     image for the title        */
+
+.box h3 {
+	background-color: #ad0768;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	height: 35px;
+	line-height: 50px;
+	margin-left: 50%;
+	padding: 15px;
+	padding: 15px;
+	width: 500px;
+	height: 60px;
+	text-align: center;
+}
+
+/* The paragraph tag contains the side borders mark-up */
+
+.box p {
+	background: #ffffff none repeat scroll 0 0;
+	font-family: 'Rye';
+	border-color: #ccc;
+	border-width: 0 1px;
+	border-style: solid;
+	color: #444444;
+	font-size: 20px;
+	line-height: 1.3em;
+	margin-left: 50%;
+	width: 500px;
+	height: 180px;
+	padding: 15px;
+	padding: 15px;
+}
+
+.typewritter {
+	color: #fff;
+	font-family: monospace;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.1em; /* Adjust as needed */
+	animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 32rem;
+	}
+}
+
+.typewritter2 {
+	color: #fff;
+	font-family: monospace;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: 0.15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.05em; /* Adjust as needed */
+	animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+.box2 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+		Geneva, Verdana, sans-serif;
+	font-size: 20px;
+	line-height: 1.54em;
+	height: 250px;
+	padding: 15px;
+	padding: 15px;
+	width: 500px;
+	margin-left: 50%;
+}
+
+.clue {
+	color: #ad0768;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 40px;
+}
+
+.itLabelsIt {
+	color: rgb(252, 22, 22);
+	margin-left: 35%;
+	margin-top: 80%;
+}
