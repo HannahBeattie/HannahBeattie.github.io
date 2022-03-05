@@ -1,5 +1,3 @@
-slug.js
-
 //down key press to change body Area
 
 document.addEventListener('keyup', changeArea)
