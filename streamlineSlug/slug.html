@@ -13,8 +13,38 @@
 	<body>
 		<h1>Dress The slug!</h1>
 
+		<div class="c">
+			<!-- The dropdown starts here... -->
+			<div class="dd">
+				<div class="dd-a">?</div>
+				<input type="checkbox" />
+				<div class="dd-c">
+					<p class="mainText">
+						This is Sluggly, the slug...<br />
+						He is naked.<br />
+						Please cover his shame as fast as possible.
+						<br />
+						<br />
+						Use the <b>UP</b> and <b>DOWN</b> arrows to choose<br />
+						between Sluggly's <b>head</b>, <b>hair</b>, <b>glasses</b>,
+						<br />
+						<b>body</b>, <b>bottom</b><br />
+						<b>tail</b> & <b>accessories</b>.
+						<br />
+						Use the <b>Left</b> and <b>Right</b> arrows<br />to select items.
+						<br />
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<div class="dressSlugParent" onclick="nextOutfit()">
-			<img class="background dressSlug" id="background" src="images/body0.png" />
+			<img
+				style="margin-bottom: 25px"
+				class="background dressSlug"
+				id="background"
+				src="images/body0.png"
+			/>
 			<img class="slughair dressSlug" id="hair" />
 			<img class="slugHead dressSlug" id="head" />
 			<img class="slugGlasses dressSlug" id="glasses" />
@@ -23,9 +53,10 @@
 			<img class="slugAccessories dressSlug" id="accessories" />
 			<img class="slugTail dressSlug" id="tail" />
 		</div>
+
 		<center>
 			<button onclick="nextPart();" class="labelCh" id="slugLabel"></button>
 		</center>
-		<center><p class="subtitles">click me</p></center>
+		<center class="subtitle">Click Me</center>
 	</body>
 </html>

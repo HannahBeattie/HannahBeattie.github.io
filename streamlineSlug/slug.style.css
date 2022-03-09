@@ -1,5 +1,9 @@
 body {
 	font-family: 'Rye', cursive;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-image: center;
+	background-size: cover;
 	background-color: lightpink;
 }
 
@@ -45,17 +49,97 @@ h1 {
 }
 
 .labelCh {
-	font-size: 30px;
+	font-size: 20px;
 	margin-top: 600px;
-	font-family: inherit;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	padding: 10px;
-	background-color: #9baf2e;
-	color: #303805;
+	background-color: lightcoral;
+	color: white;
 	/* border: 8px solid red; */
-	border-color: #ffaa00;
-	border-width: 10px;
+	border-color: #f5f5f5;
 }
 
-.subtitles {
-	color: #303805;
+.subtitle {
+	margin-top: 20px;
+	color: coral;
+}
+
+.c {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: stretch;
+}
+.dd {
+	z-index: 1;
+	margin-right: -330px;
+	align-self: center;
+	background: #f00;
+	padding: 7px;
+	border-radius: 50px;
+}
+.dd-a {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(253, 253, 255);
+	font-size: 20px;
+	transition-duration: 0.2s;
+	margin-top: 0;
+	-webkit-transition-duration: 0.2s;
+}
+.dd input:after {
+	height: 2px;
+	position: absolute;
+	transform: scaleX(0);
+	transition-duration: 0.4s;
+	-webkit-transform: scaleX(0);
+	-webkit-transition-duration: 0.2s;
+}
+.dd input {
+	top: 0;
+	opacity: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.dd input:hover {
+	cursor: pointer;
+	margin-inline-end: auto;
+}
+
+.dd input:checked ~ .dd-c {
+	transform: scaleY(1);
+	-webkit-transform: scaleY(1);
+}
+
+.dd-c {
+	position: absolute;
+	background: none;
+	height: auto;
+	transform: scaleY(0);
+	transform-origin: left;
+	transition-duration: 0.4s;
+	-webkit-transform: scaleY(0);
+	-webkit-transition-duration: 0.4s;
+	color: rgb(78, 136, 98);
+	line-height: 200%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 25px;
+	margin: 15px;
+	padding: 15px;
+	left: 20px;
+	border-radius: 10px;
+}
+
+@media (max-width: 1330px) {
+	.dd-c {
+		background: rgba(0, 0, 0, 0.726);
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 100%;
+		color: aliceblue;
+		left: 0;
+	}
 }
