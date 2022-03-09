@@ -386,6 +386,10 @@ case 'ArrowLeft':
 	}
 }
 
+document.addEventListener('keyup', changeArea)
+document.addEventListener('keydown', changeOutfit)
+
+
 
 
 function changeArea(up) {
