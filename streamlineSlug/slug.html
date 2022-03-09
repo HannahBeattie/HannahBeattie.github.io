@@ -4,27 +4,28 @@
 		<title>Dress the slug</title>
 		<link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="slug.style.css" />
-        <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
-        >
-		<script src=></script>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
+		/>
+		<script src="streamlineSlug.js"></script>
 	</head>
 	<body>
-	
-			<center><label class="labelCh" id="slugLabel">head</label></center>
+		<h1>Dress The slug!</h1>
 
-			<h1>Dress The slug!</h1>
-
-<div class="dressSlug"><center>
-				<img class="background" id="background" src="images/body0.png" />
-				<img class="slughair" id="hair">
-				<img class="slugHead" id="head">
-				<img class="slugGlasses" id="glasses">
-				<img class="slugBody" id="body">
-				<img class="slugBottom" id="bottom">
-				<img class="slugAccessories" id="accessories">
-				<img class="slugTail" id="tail">
-            </center>
+		<div class="dressSlugParent" onclick="nextOutfit()">
+			<img class="background dressSlug" id="background" src="images/body0.png" />
+			<img class="slughair dressSlug" id="hair" />
+			<img class="slugHead dressSlug" id="head" />
+			<img class="slugGlasses dressSlug" id="glasses" />
+			<img class="slugBody dressSlug" id="body" />
+			<img class="slugBottom dressSlug" id="bottom" />
+			<img class="slugAccessories dressSlug" id="accessories" />
+			<img class="slugTail dressSlug" id="tail" />
+		</div>
+		<center>
+			<button onclick="nextPart();" class="labelCh" id="slugLabel"></button>
+		</center>
+		<center><p class="subtitles">click me</p></center>
 	</body>
 </html>

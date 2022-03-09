@@ -11,7 +11,19 @@ h1 {
 }
 
 .dressSlug {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.dressSlugParent {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 384px;
 	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .head {
@@ -31,7 +43,19 @@ h1 {
 .hands {
 	z-index: 5;
 }
+
 .labelCh {
 	font-size: 30px;
-	margin-top: 20px;
+	margin-top: 600px;
+	font-family: inherit;
+	padding: 10px;
+	background-color: #9baf2e;
+	color: #303805;
+	/* border: 8px solid red; */
+	border-color: #ffaa00;
+	border-width: 10px;
+}
+
+.subtitles {
+	color: #303805;
 }
