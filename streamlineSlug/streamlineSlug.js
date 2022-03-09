@@ -128,3 +128,14 @@ function updateLabel() {
 	var label_ref = document.getElementById('slugLabel')
 	label_ref.innerText = currentPartName
 }
+
+function beVisible() {
+	console.warn('clicked!!')
+	const classes = document.getElementById('help').classList
+	if (classes.contains('visible')) {
+		classes.remove('visible')
+	} else {
+		classes.add('visible')
+	}
+}
+ß

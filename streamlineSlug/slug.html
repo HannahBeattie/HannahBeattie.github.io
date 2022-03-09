@@ -12,13 +12,12 @@
 	</head>
 	<body>
 		<h1>Dress The slug!</h1>
-
 		<div class="c">
 			<!-- The dropdown starts here... -->
 			<div class="dd">
-				<div class="dd-a">?</div>
-				<input type="checkbox" />
-				<div class="dd-c">
+				<div onclick="beVisible()" class="dd-a">?</div>
+				<!--<input type="checkbox" /> -->
+				<div id="help" class="dd-c">
 					<p class="mainText">
 						This is Sluggly, the slug...<br />
 						He is naked.<br />
@@ -39,12 +38,7 @@
 		</div>
 
 		<div class="dressSlugParent" onclick="nextOutfit()">
-			<img
-				style="margin-bottom: 25px"
-				class="background dressSlug"
-				id="background"
-				src="images/body0.png"
-			/>
+			<img class="background dressSlug" id="background" src="images/body0.png" />
 			<img class="slughair dressSlug" id="hair" />
 			<img class="slugHead dressSlug" id="head" />
 			<img class="slugGlasses dressSlug" id="glasses" />
@@ -53,10 +47,9 @@
 			<img class="slugAccessories dressSlug" id="accessories" />
 			<img class="slugTail dressSlug" id="tail" />
 		</div>
-
 		<center>
 			<button onclick="nextPart();" class="labelCh" id="slugLabel"></button>
 		</center>
-		<center class="subtitle">Click Me</center>
+		<center><p class="subtitles">click me</p></center>
 	</body>
 </html>
