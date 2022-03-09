@@ -21,7 +21,7 @@ const parts = {
 	},
 	Body: {
 		index: 0,
-		count: 20,
+		count: 18,
 		path: 'images/3/top',
 		elemId: 'body',
 	},
@@ -138,4 +138,3 @@ function beVisible() {
 		classes.add('visible')
 	}
 }
-ß
