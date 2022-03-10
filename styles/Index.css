@@ -32,18 +32,18 @@ body {
 	font-size: 30px;
 	position: relative;
 	text-align: center;
-	border-bottom: 5px solid #1abebf;
+	border-bottom: 5px solid #ffc600;
 	margin: 5px;
 	display: inline-block;
 	font-size: 30px;
 	text-decoration: none;
 	line-height: 1;
 	padding: 10px;
-	background: rgb(199, 171, 235);
-	background-image: radial-gradient = s(122deg, rgb(126, 249, 43), #1abebe);
+	background: #128a8a;
+
 	background-size: 300px, 300px, 100%;
-	color: rgb(143, 6, 6);
-	text-shadow: 1px 1px #ff0000;
+	color: #ffffff;
+	text-shadow: 1px 1px #0a0000;
 	margin-bottom: 20px;
 }
 
@@ -55,7 +55,7 @@ body {
 	line-height: 190%;
 	margin-right: auto;
 	margin-left: auto;
-	width: 1000px;
+	width: 1300px;
 	margin-bottom: 20px;
 	margin-top: 0px;
 }
@@ -71,8 +71,9 @@ h1 {
 h2 {
 	font-family: 'VT323';
 	margin-bottom: 50px;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
+	line-height: 100%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
