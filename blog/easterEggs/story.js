@@ -10,9 +10,10 @@ function libIt() {
 	var noun2 = document.getElementById('noun2').value
 	var adjective3 = document.getElementById('adjective3').value
 	storyDiv.innerHTML =
-		'Hello, my name is' +
+		'Hello, my name is ' +
 		name +
 		', ' +
+		'<br>' +
 		'I enjoy long, ' +
 		adjective +
 		' walks on the beach, getting ' +
