@@ -2,33 +2,47 @@ function libIt() {
 	var storyDiv = document.getElementById('story')
 
 	var name = document.getElementById('yourName').value
-	var adjective = document.getElementById('adjective').value
-	var verb = document.getElementById('verb').value
+	var adjective1 = document.getElementById('adjective1').value
 	var adjective2 = document.getElementById('adjective2').value
-	var noun = document.getElementById('noun').value
-	var liquid = document.getElementById('liquid').value
+	var noun1 = document.getElementById('noun1').value
+	var verb = document.getElementById('verb').value
 	var noun2 = document.getElementById('noun2').value
 	var noun3 = document.getElementById('noun3').value
+	var liquid = document.getElementById('liquid').value
+	var mood = document.getElementById('mood').value
+	var noun4 = document.getElementById('noun4').value
+	var adjective3 = document.getElementById('adjective3').value
+
 	storyDiv.innerHTML =
-		'Hello, my name is ' +
-		name +
-		', ' +
+		'Hello,' +
 		'<br>' +
-		'I enjoy long, firm, ' +
-		adjective +
-		' walks on the beach, getting ' +
+		'my name is ' +
+		name +
+		',' +
+		'<br>' +
+		'I enjoy long,' +
+		adjective1 +
+		' ' +
+		adjective2 +
+		'walks on the ' +
+		noun1 +
+		'. ' +
+		'Getting ' +
 		verb +
 		' by a ' +
-		adjective2 +
+		noun2 +
 		', and encounters with ' +
-		noun +
+		noun3 +
 		'.' +
 		'<br>' +
 		'I really like ' +
 		liquid +
 		' mixed with a good amount of ' +
-		noun2 +
+		mood +
 		', and expensive, candle-lit ' +
-		noun3 +
-		's.'
+		adjective3 +
+		' ' +
+		noun4 +
+		'<br>' +
+		'....Ladies.'
 }

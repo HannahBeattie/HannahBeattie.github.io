@@ -1,60 +1,55 @@
-
 <!DOCTYPE html>
+<html>
+	<head>
+		<title>🥀</title>
 
-    
-<title> 🥀 </title>
+		<meta charset="“UTF-8”" />
+		<link href="/blog/easterEggs/story.css" rel="stylesheet" />
+		<script src="story.js"></script>
+	</head>
+	<body>
+		<h1 class="title">🥀 Hello Mr. Lonely</h1>
 
-<meta charset=“UTF-8”>
-<link href="/blog/easterEggs/story.css" rel="stylesheet">
-<script src='story.js'></script>
-</head>
-<body>
+		<h1 class="subtitleA">Your lonesome days are gone.</h1>
 
-    <h1 class="title">🥀   Hello Mr. Lonely  </h1>
+		<h1 class="subtitleB">
+			Thanks to Mr.Lonesome's Lonely Hearts Page.<br />
+			Fill in the form below, then press 'Find Love'.<br />
+			<br />
+			Mr.Lonesome is not liable for any heartbreak or financial loss that may occur in the
+			process of finding your soulmate.
+		</h1>
 
+		<div class="paper">
+			<div class="container">
+				<p class="question">applicant's name</p>
+				<p class="answer"><input type="text" id="yourName" /></p>
+				<p class="question">adjective (describes)</p>
+				<p class="answer"><input type="text" id="adjective1" /></p>
+				<p class="question">another adjective</p>
+				<p class="answer"><input type="text" id="adjective2" /></p>
+				<p class="question">noun (thing/person)</p>
+				<p class="answer"><input type="text" id="noun1" /></p>
+				<p class="question">verb ending in 'ed'</p>
+				<p class="answer"><input type="text" id="verb" /></p>
+				<p class="question">noun</p>
+				<p class="answer"><input type="text" id="noun2" /></p>
+				<p class="question">plural noun</p>
+				<p class="answer"><input type="text" id="noun3" /></p>
+				<p class="question">liquid</p>
+				<p class="answer"><input type="text" id="liquid" /></p>
+				<p class="question">mood ending in 'ness'</p>
+				<p class="answer"><input type="text" id="mood" /></p>
+				<p class="question">adjective</p>
+				<p class="answer"><input type="text" id="adjective3" /></p>
+				<p class="question">plural noun</p>
+				<p class="answer"><input type="text" id="noun4" /></p>
+			</div>
+		</div>
 
-<h1 class="subtitleA">
-    Your lonesome days are gone. 
-</h1>
+		<center><button class="button" type="button" onclick="libIt()">find love</button></center>
+		<center><p class="instruct">your collumn will appear below</p></center>
 
-<h1 class="subtitleB">
-    Thanks to Mr.Lonesome's Lonely Hearts Page.<br>
-    Fill in the form below, then press 'Find Love'.<br>
-    <br>
-    Mr.Lonesome is not liable for any heartbreak or financial loss that may occur in the process of finding your soulmate.
-
-</h1>
-
-<div class="paper">
-
-<div class="container">
-
-        <p class="question">Your name</p>
-           <p class="answer"><input type="text" id="yourName"></p>
-        <p class="question">adjective</p>
-        <p class="answer"> <input type="text" id="adjective"></p>
-            <p class="question">verb ending in "ed"</p>
-            <p class="answer"><input type="text" id="verb"></p>
-                <p class="question">adjective</p>
-                <p class="answer"> <input type="text" id="adjective2"></p>
-                    <p class="question">plural noun</p>
-                    <p class="answer"><input type="text" id="noun"></p>
-                        <p class="question">liquid</p>
-                        <p class="answer"> <input type="text" id="liquid"></p>
-                            <p class="question">noun</p>
-                            <p class="answer"> <input type="text" id="noun2"></p>
-                                <p class="question">adjective</p>
-                                <p class="answer"> <input type="text" id="noun3"></p>
-      </ul>
-    </section>
-
-</div>
-</div>
-   <center><button class='button' type="button" onclick="libIt()">click me</button></center> 
-   <center><p class="instruct">your collumn will appear below</p></center>
-
-    <div id="story"></div>
-    
-
-</body>
+		<div id="story"></div>
+	</body>
 </html>
