@@ -44,8 +44,8 @@ h1 {
 .socks {
 	z-index: 2;
 }
-.hands {
-	z-index: 5;
+.bottom {
+	z-index: 1;
 }
 
 .labelCh {

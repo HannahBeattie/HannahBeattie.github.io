@@ -9,7 +9,7 @@ const parts = {
 	},
 	Head: {
 		index: 0,
-		count: 16,
+		count: 17,
 		path: 'images/1/face',
 		elemId: 'head',
 	},
@@ -21,7 +21,7 @@ const parts = {
 	},
 	Body: {
 		index: 0,
-		count: 18,
+		count: 19,
 		path: 'images/3/top',
 		elemId: 'body',
 	},
@@ -39,7 +39,7 @@ const parts = {
 	},
 	Tail: {
 		index: 0,
-		count: 6,
+		count: 7,
 		path: 'images/6/tail',
 		elemId: 'tail',
 	},
