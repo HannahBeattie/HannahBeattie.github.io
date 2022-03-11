@@ -9,7 +9,7 @@ const parts = {
 	},
 	Head: {
 		index: 0,
-		count: 17,
+		count: 19,
 		path: 'images/1/face',
 		elemId: 'head',
 	},
