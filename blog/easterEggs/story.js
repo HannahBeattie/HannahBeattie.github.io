@@ -20,14 +20,15 @@ function libIt() {
 		name +
 		',' +
 		'<br>' +
-		'I enjoy long,' +
-		adjective1 +
+		'I enjoy long, ' +
 		' ' +
+		adjective1 +
+		', ' +
 		adjective2 +
-		'walks on the ' +
+		' walks on the ' +
 		noun1 +
-		'. ' +
-		'Getting ' +
+		', ' +
+		'getting ' +
 		verb +
 		' by a ' +
 		noun2 +
