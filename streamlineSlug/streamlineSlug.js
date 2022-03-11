@@ -33,7 +33,7 @@ const parts = {
 	},
 	Accessories: {
 		index: 0,
-		count: 13,
+		count: 14,
 		path: 'images/5/accessories',
 		elemId: 'accessories',
 	},
