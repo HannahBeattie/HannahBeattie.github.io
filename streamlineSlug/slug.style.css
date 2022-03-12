@@ -30,24 +30,6 @@ h1 {
 	left: 0;
 }
 
-.head {
-	z-index: 3;
-}
-
-.accessories {
-	z-index: 5;
-}
-.body {
-	z-index: 1;
-}
-
-.socks {
-	z-index: 2;
-}
-.bottom {
-	z-index: 1;
-}
-
 .labelCh {
 	font-size: 20px;
 	margin-top: 600px;
@@ -57,6 +39,7 @@ h1 {
 	color: white;
 	/* border: 8px solid red; */
 	border-color: #f5f5f5;
+	z-index: 7;
 }
 
 .subtitle {
@@ -146,4 +129,27 @@ h1 {
 		margin-left: 0px;
 		padding: 100px;
 	}
+}
+
+.body {
+	z-index: 1;
+}
+.bottom {
+	z-index: 2;
+}
+
+.tail {
+	z-index: 2;
+}
+
+.head {
+	z-index: 4;
+}
+
+.hair {
+	z-index: 6;
+}
+
+.accessories {
+	z-index: 5;
 }

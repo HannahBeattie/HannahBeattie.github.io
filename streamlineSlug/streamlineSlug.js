@@ -21,7 +21,7 @@ const parts = {
 	},
 	Body: {
 		index: 0,
-		count: 19,
+		count: 20,
 		path: 'images/3/top',
 		elemId: 'body',
 	},
@@ -33,13 +33,13 @@ const parts = {
 	},
 	Accessories: {
 		index: 0,
-		count: 14,
+		count: 24,
 		path: 'images/5/accessories',
 		elemId: 'accessories',
 	},
 	Tail: {
 		index: 0,
-		count: 7,
+		count: 6,
 		path: 'images/6/tail',
 		elemId: 'tail',
 	},
