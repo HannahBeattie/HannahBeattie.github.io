@@ -3,7 +3,7 @@ let whichPart = 0
 const parts = {
 	Hair: {
 		index: 0,
-		count: 9,
+		count: 8,
 		path: 'images/0/hair',
 		elemId: 'hair',
 	},
@@ -33,7 +33,7 @@ const parts = {
 	},
 	Accessories: {
 		index: 0,
-		count: 25,
+		count: 26,
 		path: 'images/5/accessories',
 		elemId: 'accessories',
 	},
