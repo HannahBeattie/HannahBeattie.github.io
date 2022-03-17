@@ -2,9 +2,9 @@
     controllable object getting faster and faster. If the objects collide with the monster the game
     ends. A scorboard will increase while the monster lives */
 
-var figY = 45
+var figY = 30
 var jumpInterval
-var numObsticlesSpawned = 0
+var numObsticlesSpawned = 1
 var gameSpeed = 1
 
 window.onload = function () {
@@ -28,15 +28,21 @@ function spawnObsticle() {
   setInterval(function () {
     obsticleX -= gameSpeed
     newObsticle.style.left = obsticleX + '%'
+
+    checkCollision(obsticleX)
   }, 20)
 
   document.body.appendChild(newObsticle)
 
-  var respawnTime = Math.random() * 3000 + 500
+  var respawnTime = (Math.random() * 3000) / gameSpeed + 500
 
   setTimeout(function () {
     spawnObsticle()
   }, respawnTime)
+}
+
+function checkCollision(ObsticleX) {
+  if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) alert('you died!')
 }
 
 /* this function makes the figure jump*/
@@ -49,8 +55,8 @@ window.onkeydown = function (e) {
       steps += 1
       var change_in_y = getChangeY(steps)
       figY -= change_in_y
-      if (figY > 45) {
-        figY = 45
+      if (figY > 30) {
+        figY = 30
         /* clears the interval increase and returns
         the figure to original height*/
         clearInterval(jumpInterval)
