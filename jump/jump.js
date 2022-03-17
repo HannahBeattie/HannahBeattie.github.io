@@ -11,90 +11,98 @@ var score = 0
 var highScore = loadHighScore()
 
 window.onload = function () {
-  loadHighScore()
-  var scorLabel = document.getElementById('scoring')
+	loadHighScore()
+	var scorLabel = document.getElementById('scoring')
 
-  spawnObsticle()
-  setInterval(function () {
-    score += 1
-    scorLabel.innerHTML = 'score: ' + score + ' high score: ' + highScore
-  }, 1000)
+	spawnObsticle()
+	setInterval(function () {
+		score += 1
+		scorLabel.innerHTML = 'score: ' + score + ' high score: ' + highScore
+	}, 1000)
 }
 
 function loadHighScore() {
-  if (localStorage.getItem('highScore') != null) {
-    highScore = localStorage.getItem('highScore')
-  }
+	if (localStorage.getItem('highScore') != null) {
+		highScore = localStorage.getItem('highScore')
+	}
 }
 
 function spawnObsticle() {
-  var obsticleX = 100
-  numObsticlesSpawned += 1
-  if (numObsticlesSpawned % 10 == 1) {
-    gameSpeed *= 1.1
-  }
-  var newObsticle = document.createElement('div')
-  newObsticle.style.backgroundColor = 'yellow'
-  newObsticle.style.height = '5%'
-  newObsticle.style.width = '3%'
-  newObsticle.style.position = 'absolute'
-  newObsticle.style.top = '45%'
-  newObsticle.style.left = '100%'
+	var obsticleX = 100
+	numObsticlesSpawned += 1
+	if (numObsticlesSpawned % 10 == 1) {
+		gameSpeed *= 1.1
+	}
+	var newObsticle = document.createElement('img')
 
-  setInterval(function () {
-    obsticleX -= gameSpeed
-    newObsticle.style.left = obsticleX + '%'
+	newObsticle.style.width = '10%'
+	newObsticle.style.position = 'absolute'
+	newObsticle.style.top = '37%'
+	newObsticle.style.left = '100%'
+	newObsticle.setAttribute('src', 'ballsack.png')
 
-    checkCollision(obsticleX)
-  }, 20)
+	setInterval(function () {
+		obsticleX -= gameSpeed
+		newObsticle.style.left = obsticleX + '%'
 
-  document.body.appendChild(newObsticle)
+		checkCollision(obsticleX)
+	}, 20)
 
-  var respawnTime = (Math.random() * 3000) / gameSpeed + 500
+	document.body.appendChild(newObsticle)
 
-  setTimeout(function () {
-    spawnObsticle()
-  }, respawnTime)
+	var respawnTime = (Math.random() * 3000) / gameSpeed + 500
+
+	setTimeout(function () {
+		spawnObsticle()
+	}, respawnTime)
 }
 
 function checkCollision(ObsticleX) {
-  if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) {
-    alert('you died!')
-    isAlive = false
-    if (score > highScore) {
-      highScore = score
-      localStorage.setItem('highScore', highScore)
-      location.reload()
-    }
-    if (!isAlive) {
-      score = -1
-    }
-  }
+	if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) {
+		alert(
+			'you diiiieeeeddd!' +
+				' you jumped over ' +
+				score +
+				' ballsacks' +
+				' , ' +
+				'the highscore is ' +
+				highScore
+		)
+		isAlive = false
+		if (score > highScore) {
+			highScore = score
+			localStorage.setItem('highScore', highScore)
+			location.reload()
+		}
+		if (!isAlive) {
+			score = -1
+		}
+	}
 }
 
 /* this function makes the figure jump*/
 window.onkeydown = function (e) {
-  var fig = document.getElementById('figure')
-  if (e.keyCode === 32) {
-    //console.log('hi')
-    var steps = 0
-    jumpInterval = setInterval(function () {
-      steps += 1
-      var change_in_y = getChangeY(steps)
-      figY -= change_in_y
-      if (figY > 30) {
-        figY = 30
-        /* clears the interval increase and returns
+	var fig = document.getElementById('figure')
+	if (e.keyCode === 32) {
+		//console.log('hi')
+		var steps = 0
+		jumpInterval = setInterval(function () {
+			steps += 1
+			var change_in_y = getChangeY(steps)
+			figY -= change_in_y
+			if (figY > 30) {
+				figY = 30
+				/* clears the interval increase and returns
         the figure to original height*/
-        clearInterval(jumpInterval)
-      }
-      fig.style.top = figY + '%'
-    }, 10)
-  }
+				clearInterval(jumpInterval)
+			}
+			fig.style.top = figY + '%'
+		}, 10)
+	}
 }
 /* this function dictates the height of the jump
 and simulates gravity*/
 function getChangeY(steps) {
-  var change = (-(steps - 12) * (steps - 12) + 144) / 75
-  return change
+	var change = (-(steps - 12) * (steps - 12) + 144) / 75
+	return change
 }
