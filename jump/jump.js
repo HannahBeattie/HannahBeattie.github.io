@@ -4,6 +4,40 @@
 
 var figY = 45
 var jumpInterval
+var numObsticlesSpawned = 0
+var gameSpeed = 1
+
+window.onload = function () {
+  spawnObsticle()
+}
+
+function spawnObsticle() {
+  var obsticleX = 100
+  numObsticlesSpawned += 1
+  if (numObsticlesSpawned % 10 == 1) {
+    gameSpeed *= 1.1
+  }
+  var newObsticle = document.createElement('div')
+  newObsticle.style.backgroundColor = 'yellow'
+  newObsticle.style.height = '5%'
+  newObsticle.style.width = '3%'
+  newObsticle.style.position = 'absolute'
+  newObsticle.style.top = '45%'
+  newObsticle.style.left = '100%'
+
+  setInterval(function () {
+    obsticleX -= gameSpeed
+    newObsticle.style.left = obsticleX + '%'
+  }, 20)
+
+  document.body.appendChild(newObsticle)
+
+  var respawnTime = Math.random() * 3000 + 500
+
+  setTimeout(function () {
+    spawnObsticle()
+  }, respawnTime)
+}
 
 /* this function makes the figure jump*/
 window.onkeydown = function (e) {
