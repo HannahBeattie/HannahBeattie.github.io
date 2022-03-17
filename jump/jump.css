@@ -1,0 +1,17 @@
+.jumper {
+  width: 3%;
+  height: 5%;
+  background-color: blueviolet;
+  position: absolute;
+  left: 40%;
+  top: 45%;
+}
+
+.ground {
+  width: 100%;
+  background-color: black;
+  height: 5px;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}
