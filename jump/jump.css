@@ -11,8 +11,8 @@ body {
 
 .ground {
 	width: 100%;
-	color: black;
-	height: 350px;
+	background-color: rgb(0, 61, 21);
+	height: 300px;
 	position: absolute;
 	left: 0%;
 	top: 50%;
