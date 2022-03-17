@@ -6,9 +6,25 @@ var figY = 30
 var jumpInterval
 var numObsticlesSpawned = 1
 var gameSpeed = 1
+var isAlive = true
+var score = 0
+var highScore = loadHighScore()
 
 window.onload = function () {
+  loadHighScore()
+  var scorLabel = document.getElementById('scoring')
+
   spawnObsticle()
+  setInterval(function () {
+    score += 1
+    scorLabel.innerHTML = 'score: ' + score + ' high score: ' + highScore
+  }, 1000)
+}
+
+function loadHighScore() {
+  if (localStorage.getItem('highScore') != null) {
+    highScore = localStorage.getItem('highScore')
+  }
 }
 
 function spawnObsticle() {
@@ -42,7 +58,18 @@ function spawnObsticle() {
 }
 
 function checkCollision(ObsticleX) {
-  if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) alert('you died!')
+  if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) {
+    alert('you died!')
+    isAlive = false
+    if (score > highScore) {
+      highScore = score
+      localStorage.setItem('highScore', highScore)
+      location.reload()
+    }
+    if (!isAlive) {
+      score = -1
+    }
+  }
 }
 
 /* this function makes the figure jump*/
