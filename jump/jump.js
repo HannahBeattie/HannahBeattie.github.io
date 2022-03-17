@@ -60,13 +60,13 @@ function spawnObsticle() {
 function checkCollision(ObsticleX) {
 	if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) {
 		alert(
-			'you diiiieeeeddd!' +
-				' you jumped over ' +
+			'Oopsie! You died. ' +
+				'Your score is ' +
 				score +
-				' ballsacks' +
 				' , ' +
-				'the highscore is ' +
-				highScore
+				'the highscore for jumping over ballsacks is ' +
+				highScore +
+				'.'
 		)
 		isAlive = false
 		if (score > highScore) {
