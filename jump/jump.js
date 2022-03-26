@@ -8,7 +8,7 @@ var numObsticlesSpawned = 1
 var gameSpeed = 1
 var isAlive = true
 var score = 0
-var highScore = loadHighScore()
+var highScore = 0
 
 window.onload = function () {
 	loadHighScore()
@@ -17,7 +17,11 @@ window.onload = function () {
 	spawnObsticle()
 	setInterval(function () {
 		score += 1
-		scorLabel.innerHTML = 'score: ' + score + ' high score: ' + highScore
+		if (score > highScore) {
+			scorLabel.innerHTML = 'score: ' + score + ' (new high score!)'
+		} else {
+			scorLabel.innerHTML = 'score: ' + score + ' high score: ' + highScore
+		}
 	}, 1000)
 }
 
@@ -59,20 +63,24 @@ function spawnObsticle() {
 
 function checkCollision(ObsticleX) {
 	if (ObsticleX > 29 && ObsticleX < 31 && figY === 30) {
-		alert(
-			'Oopsie! You died. ' +
-				'Your score is ' +
-				score +
-				' , ' +
-				'the highscore for jumping over ballsacks is ' +
-				highScore +
-				'.'
-		)
 		isAlive = false
 		if (score > highScore) {
+			alert(
+				'You died, but you got the new high score by jumping over ' + score + ' ballsacks!'
+			)
 			highScore = score
 			localStorage.setItem('highScore', highScore)
 			location.reload()
+		} else {
+			alert(
+				'Oopsie! You died. ' +
+					'Your score is ' +
+					score +
+					' , ' +
+					'the highscore for jumping over ballsacks is ' +
+					highScore +
+					'.'
+			)
 		}
 		if (!isAlive) {
 			score = -1
