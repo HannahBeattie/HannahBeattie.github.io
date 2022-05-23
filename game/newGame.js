@@ -61,15 +61,16 @@ window.addEventListener('load', function () {
       //context.fillStyle = 'transparent'
       //context.fillRect(this.x, this.y, this.width, this.height)
 
-      context.beginPath()
-      context.arc(
-        this.x + this.width / 2,
-        this.y + this.height / 2,
-        this.width / 2,
-        0,
-        Math.PI * 2
-      )
-      context.stroke()
+      // context.beginPath()
+      // context.arc(
+      //   this.x + this.width / 2,
+      //   this.y + this.height / 2,
+      //   this.width / 2,
+      //   0,
+      //   Math.PI * 2
+      // )
+      // context.stroke()
+
       context.drawImage(
         this.image,
         this.frameX * this.width,
@@ -87,10 +88,18 @@ window.addEventListener('load', function () {
     update(input, deltaTime, enemies) {
       //collision detection
       enemies.forEach((enemy) => {
+        const shrink = 0.5
         const dx = enemy.x + enemy.width / 2 - (this.x + this.width / 2)
         const dy = enemy.y + enemy.height / 2 - (this.y + this.height / 2)
-        const distance = Math.sqrt(dx * dx * dy * dy)
-        if (distance < enemy.width / 2 + this.width / 2) {
+        const distance = Math.sqrt(dx * dx + dy * dy)
+        if (distance < (shrink * enemy.width) / 2 + (shrink * this.width) / 2) {
+          console.log('Game over!', {
+            distance,
+            dx,
+            dy,
+            enemy,
+            player: this,
+          })
           gameOver = true
         }
       })
@@ -183,15 +192,15 @@ window.addEventListener('load', function () {
       this.markedForDeletion = false
     }
     draw(context) {
-      context.beginPath()
-      context.arc(
-        this.x + this.width / 2,
-        this.y + this.height / 2,
-        this.width / 2,
-        0,
-        Math.PI * 2
-      )
-      context.stroke()
+      // context.beginPath()
+      // context.arc(
+      //   this.x + this.width / 2,
+      //   this.y + this.height / 2,
+      //   this.width / 2,
+      //   0,
+      //   Math.PI * 2
+      // )
+      // context.stroke()
 
       context.drawImage(
         this.image,
